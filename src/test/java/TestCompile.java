@@ -1,14 +1,16 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.Test;
 
 public class TestCompile {
-    public static void main(String[] args) {
-        WebDriver Chrome=new ChromeDriver();
-    }
 
     @Test
-    public void sampleTest(){
-        System.out.println("Hello");
+    public void openGooglePage(){
+        WebDriver ChromeD=new ChromeDriver();
+        ChromeD.get("https://www.google.com");
+        //WebDriver FirefoxD=new FirefoxDriver();
+        //WebDriver IeDri=new InternetExplorerDriver();
     }
 }
