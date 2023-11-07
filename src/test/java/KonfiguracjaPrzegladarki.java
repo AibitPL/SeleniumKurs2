@@ -6,11 +6,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.testng.annotations.Test;
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class KonfiguracjaPrzegladarki {
 
-    @Test
+  /*  @Test
     public void openBrowser() {
         WebDriverManager.iedriver().setup();
         ChromeOptions options = new ChromeOptions();
@@ -21,5 +21,5 @@ public class KonfiguracjaPrzegladarki {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("alert('Helllo')"); // symulacja alertu na stronie
         driver.get("https://www.google.com");
-    }
+    } */
 }

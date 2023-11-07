@@ -14,7 +14,7 @@ public class PierwszyTest {
         // driver.switchTo().frame(0); // przepinamy sie do pierwszego okienka (pliki cookie)
         WebElement agreeButton = driver.findElement(By.xpath("//div[text()='Zaakceptuj wszystko']"));
         agreeButton.click();
-        // driver.switchTo().defaultContent();
+        //driver.switchTo().defaultContent();
         WebElement search = driver.findElement(By.name("q")); // przechodzimy do pola wyszukiwania google
         search.sendKeys("Selenium"); // wpisujemy selenium
         search.sendKeys(Keys.ENTER); // klikanie enter
