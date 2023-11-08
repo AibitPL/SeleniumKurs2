@@ -29,6 +29,28 @@ public class CssSelectors {
         By cssClass2=By.cssSelector("[class='topSecret']"); //inny sposob zapisu wyszukiwania klas
         driver.findElement(cssClass2);
 
+        By cssAll=By.cssSelector("*");
+        driver.findElement(cssAll);
+
+        By ulInsideDiv=By.cssSelector("div ul");
+        driver.findElement(ulInsideDiv);
+
+        By trInTable=By.cssSelector("table tr");
+        By trInTbody=By.cssSelector("tbody tr");
+        By firstDiv=By.cssSelector("div > ul");
+
+        By firstFormAfterLabel=By.cssSelector("label + form"); //wskazuje pierwszy form po labelu
+        By allFormsAfterLabel=By.cssSelector("label ~ form");
+        driver.findElement(firstFormAfterLabel);
+        driver.findElement(allFormsAfterLabel);
+
+        By includeZnak=By.cssSelector("[name*='nam'"); // wskazuje element zawierajacy ciag znakow nam
+        By startsZnak=By.cssSelector("[name^='f'");
+        By endsZnak=By.cssSelector("[name$='name'");
+
+        By firstChildFromList=By.cssSelector("li:first-child");  //wskazuje pierwszy element w liscie
+        By lastChildFromList=By.cssSelector("li:last-child");
+        By nChildFromList=By.cssSelector("li:nth-child(3)");
 
     }
 }
