@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+import javax.sound.midi.Soundbank;
 import java.util.List;
 
 public class ZaznaczanieCheckBoxa {
@@ -29,6 +30,9 @@ public class ZaznaczanieCheckBoxa {
         for(WebElement option:options){
             System.out.println(option.getText());
         }
+        PracaDomowa check=new PracaDomowa();
+        System.out.println(check.PD1("Volvo",selectCar));
+        System.out.println(check.PD1("Audie",selectCar));
 
     }
 }
